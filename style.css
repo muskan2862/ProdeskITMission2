@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 16px;
+}
+
+.container {
+    background: #fff;
+    padding: 28px;
+    width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 6px rgba(102, 126, 234, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.88;
+    transform: scale(1.02);
+}
+
+h2 {
+    margin: 14px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+li {
+    background: #f4f6ff;
+    margin: 6px 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+li button {
+    background: #ff4d4d;
+    width: auto;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+li button:hover {
+    background: #e60000;
+}
+
+#balance {
+    font-weight: 700;
+    color: green;
+}
+
+#balance.low {
+    color: #e60000;
+}
+
+.chart-wrapper {
+    margin: 18px 0;
+    max-height: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+#myChart {
+    max-height: 220px;
+}
+
+ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}

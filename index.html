@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash-Flow (Salary & Expense Tracker)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <h1>Cash-Flow</h1>
+      <p class="subtitle">Salary & Expense Tracker</p>
+
+      <div class="input-group">
+        <input type="number" id="salary" placeholder="Enter your salary">
+        <button onclick="setSalary()">Set Salary</button>
+      </div>
+
+      <h2>Total Salary: ₹<span id="totalSalary">0</span></h2>
+
+      <div class="input-group">
+        <input type="text" id="expenseName" placeholder="Enter expense name">
+        <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+        <button onclick="addExpense()">Add Expense</button>
+      </div>
+
+      <ul id="expenseList"></ul>
+
+      <h2>Remaining Balance: ₹<span id="balance">0</span></h2>
+
+      <div class="chart-wrapper">
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <button onclick="downloadPDF()">⬇ Download Report</button>
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</html>
+
+
+
